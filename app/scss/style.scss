@@ -3,8 +3,98 @@
 @import 'reset';
 @import 'global';
 
+.header {  
+  &-top {
+    padding: 14px 0;
+    background-color: $title;
+    color: $white;
+    font-size: 13px;
+    line-height: 18px;
+    @extend %opensans-700;
+    letter-spacing: 0.03em;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__links {
+      display: flex;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+    &__link:not(:last-child) {
+      margin-right: 48px;
+    }
+    &__icon {
+      margin-right: 12px;
+    }
+  } 
+  &-bottom {
+    padding: 30px 0;
+    background-color: $accent;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
 
+.menu {
+  &__list {
+    display: flex;
+    &-item:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
 
+.logotype {
+  display: flex;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-right: 14px;
+}
+
+.title {
+  @extend %ruda-600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center; 
+  & span {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  margin-right: 7px;
+  &__link {
+    position: relative;
+  }
+  &__link:not(:last-child) {
+    margin-right: 25px;
+  } 
+  &__num {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $white;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    color: #CF3E3B;
+    top: -7px;
+    left: -7px;
+  }
+}
 
 
 
